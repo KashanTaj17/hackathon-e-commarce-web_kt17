@@ -5,13 +5,15 @@ export default function HeroSection() {
   return (
     <>
       {/* Hero Section */}
-      <section 
-        className="relative w-full h-[calc(100vh-73px)] bg-no-repeat bg-cover bg-bottom flex items-center justify-center" 
+      <section
+        className="relative w-full h-[calc(100vh-73px)] bg-no-repeat bg-cover bg-bottom flex items-center justify-center"
         style={{ backgroundImage: "url('/Hero_02.png')" }}
       >
         {/* Text Content */}
         <div className="bg-[#FFF3E3] rounded-[10px] px-6 md:px-[39px] py-20 md:py-[72px] max-w-lg md:max-w-xl absolute top-[35%] right-[10%] md:top-[30%] md:right-[8%]">
-          <p className="text-customBlack font-semibold text-sm md:text-base">New Arrival</p>
+          <p className="text-customBlack font-semibold text-sm md:text-base">
+            New Arrival
+          </p>
           <h1 className="text-primary py-4 text-2xl md:text-4xl leading-tight font-bold text-[#B88E2F]">
             Discover Our <br /> New Collection
           </h1>
@@ -23,8 +25,6 @@ export default function HeroSection() {
             BUY NOW
           </button>
         </div>
-
-  
       </section>
     </>
   );

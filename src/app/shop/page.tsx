@@ -177,7 +177,8 @@ function ProductGrid() {
           {/* Center: Results Count */}
           <div className="flex-grow text-center font-semibold">
             <p>
-              Showing <span className="font-bold">1–16</span> of {products.length} results
+              Showing <span className="font-bold">1–16</span> of{" "}
+              {products.length} results
             </p>
           </div>
 
@@ -197,7 +198,10 @@ function ProductGrid() {
             {/* Sort By */}
             <div className="flex items-center">
               <span className="text-gray-700 mr-2">Sort by</span>
-              <select className="px-2 py-1 border rounded" aria-label="Sort products">
+              <select
+                className="px-2 py-1 border rounded"
+                aria-label="Sort products"
+              >
                 <option value="default">Default</option>
                 <option value="price">Price</option>
                 <option value="popularity">Popularity</option>
@@ -213,15 +217,15 @@ function ProductGrid() {
             <Link
               key={index}
               href={
-                product.name === "Leviosa"
-                  ? "/cart"
-                  : `/singleproduct/${index}`
+                product.name === "Leviosa" ? "/cart" : `/singleproduct/${index}`
               }
             >
               <div className="relative border rounded-lg shadow-sm overflow-hidden bg-[#F4F5F8] cursor-pointer">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
+                  height={301}
+                  width={500}
                   className="w-full h-[301px] object-cover"
                 />
                 {product.discount && (
@@ -233,7 +237,9 @@ function ProductGrid() {
                   <h3 className="font-semibold text-lg">{product.name}</h3>
                   <p className="text-gray-500 text-sm">{product.description}</p>
                   <div className="mt-2">
-                    <span className="font-bold text-black">{product.price}</span>
+                    <span className="font-bold text-black">
+                      {product.price}
+                    </span>
                     {product.originalPrice && (
                       <span className="text-gray-400 line-through ml-2">
                         {product.originalPrice}
@@ -247,46 +253,70 @@ function ProductGrid() {
         </div>
 
         <div className="flex justify-center mt-6 space-x-6 pb-10 pt-5">
-          <button className="w-8 h-8 bg-yellow-500 text-white rounded-lg">1</button>
-          <button className="w-8 h-8 hover:bg-yellow-500 bg-gray-200 rounded-lg">2</button>
-          <button className="w-8 h-8  hover:bg-yellow-500 bg-gray-200 rounded-lg">3</button>
+          <button className="w-8 h-8 bg-yellow-500 text-white rounded-lg">
+            1
+          </button>
+          <button className="w-8 h-8 hover:bg-yellow-500 bg-gray-200 rounded-lg">
+            2
+          </button>
+          <button className="w-8 h-8  hover:bg-yellow-500 bg-gray-200 rounded-lg">
+            3
+          </button>
           <button className="px-4 py-1  hover:bg-yellow-500 bg-gray-200 rounded-lg">
             Next
           </button>
         </div>
-     
+
         <div className="flex flex-wrap justify-between items-center p-20 w-full bg-[#F9F1E7]">
-  <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
-    <Image src="/Trophy_22.png" width={60} height={60} alt="High Quality" />
-    <div className="ml-4">
-      <h4 className="font-bold">High Quality</h4>
-      <p className="text-[#898989]">Crafted from top materials</p>
-    </div>
-  </div>
-  <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
-    <Image src="/Warranty_23.png" width={60} height={60} alt="Warranty Protection" />
-    <div className="ml-4">
-      <h4 className="font-bold">Warranty Protection</h4>
-      <p className="text-[#898989]">Over 2 years</p>
-    </div>
-  </div>
-  <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
-    <Image src="/Shipping_24.png" width={60} height={60} alt="Free Shipping" />
-    <div className="ml-4">
-      <h4 className="font-bold">Free Shipping</h4>
-      <p className="text-[#898989]">Order over 150 $</p>
-    </div>
-  </div>
-  <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
-    <Image src="/Suppor_25.png" width={60} height={60} alt="24/7 Support" />
-    <div className="ml-4">
-      <h4 className="font-bold">24 / 7 Support</h4>
-      <p className="text-[#898989]">Dedicated support</p>
-    </div>
-  </div>
-</div>
-
-
+          <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
+            <Image
+              src="/Trophy_22.png"
+              width={60}
+              height={60}
+              alt="High Quality"
+            />
+            <div className="ml-4">
+              <h4 className="font-bold">High Quality</h4>
+              <p className="text-[#898989]">Crafted from top materials</p>
+            </div>
+          </div>
+          <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
+            <Image
+              src="/Warranty_23.png"
+              width={60}
+              height={60}
+              alt="Warranty Protection"
+            />
+            <div className="ml-4">
+              <h4 className="font-bold">Warranty Protection</h4>
+              <p className="text-[#898989]">Over 2 years</p>
+            </div>
+          </div>
+          <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
+            <Image
+              src="/Shipping_24.png"
+              width={60}
+              height={60}
+              alt="Free Shipping"
+            />
+            <div className="ml-4">
+              <h4 className="font-bold">Free Shipping</h4>
+              <p className="text-[#898989]">Order over 150 $</p>
+            </div>
+          </div>
+          <div className="flex items-center text-left w-full sm:w-auto mb-4 sm:mb-0">
+            <Image
+              src="/Suppor_25.png"
+              width={60}
+              height={60}
+              alt="24/7 Support"
+            />
+            <div className="ml-4">
+              <h4 className="font-bold">24 / 7 Support</h4>
+              <p className="text-[#898989]">Dedicated support</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

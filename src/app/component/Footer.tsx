@@ -1,6 +1,6 @@
-function Footer () {
-    return (
-        <>
+function Footer() {
+  return (
+    <>
       <footer className="mt-12 border-t-4 border-purple-200 py-8">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -13,32 +13,62 @@ function Footer () {
               </p>
             </div>
 
-          
-  
             {/* Links */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-400 mb-2">Links</h3>
+              <h3 className="text-lg font-semibold text-gray-400 mb-2">
+                Links
+              </h3>
               <ul className="text-black space-y-6 py-8">
-                <li><a href="#" className="hover:text-purple-400">Home</a></li>
-                <li><a href="#" className="hover:text-purple-400">Shop</a></li>
-                <li><a href="#" className="hover:text-purple-400">About</a></li>
-                <li><a href="#" className="hover:text-purple-400">Contact</a></li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Shop
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
-  
+
             {/* Help */}
             <div>
               <h3 className="text-lg font-semibold text-gray-400 mb-2">Help</h3>
               <ul className="text-black space-y-6 py-8">
-                <li><a href="#" className="hover:text-purple-400">Payment Options</a></li>
-                <li><a href="#" className="hover:text-purple-400">Returns</a></li>
-                <li><a href="#" className="hover:text-purple-400">Privacy Policies</a></li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Payment Options
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Returns
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-purple-400">
+                    Privacy Policies
+                  </a>
+                </li>
               </ul>
             </div>
-  
+
             {/* Newsletter */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-400 mb-2">Newsletter</h3>
+              <h3 className="text-lg font-semibold text-gray-400 mb-2">
+                Newsletter
+              </h3>
               <div className="flex flex-col gap-3 py-8">
                 <input
                   type="email"
@@ -51,16 +81,15 @@ function Footer () {
               </div>
             </div>
           </div>
-  
+
           {/* Footer Bottom */}
           <div className="text-center text-sm text-black mt-8">
             <p>2023 Funiro. All rights reserved</p>
           </div>
         </div>
       </footer>
-      </>
-    );
-  };
-  
-  export default Footer;
-  
+    </>
+  );
+}
+
+export default Footer;

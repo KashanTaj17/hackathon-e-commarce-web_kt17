@@ -5,10 +5,10 @@ function ShareSetupSection() {
   return (
     <section>
       <div className="py-12">
-        <p className=" font-semibold text-center">
-          Share your setup with
+        <p className=" font-semibold text-center">Share your setup with</p>
+        <p className="text-20 text-[40px] font-bold text-center">
+          #FuniroFurniture
         </p>
-        <p className="text-20 text-[40px] font-bold text-center">#FuniroFurniture</p>
       </div>
       <div className="">
         <Image

@@ -38,7 +38,8 @@ export default function Contact() {
           Get In Touch With Us
         </h2>
         <p className="text-[#9F9F9F] sm:text-sm md:text-base lg:text-lg">
-          For More Information About Our Product & Services. Please Feel Free To Drop Us
+          For More Information About Our Product & Services. Please Feel Free To
+          Drop Us
           <br />
           An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
         </p>
@@ -116,33 +117,52 @@ export default function Contact() {
           </form>
         </div>
       </div>
-             
-      <div className="mt-24 mb-5 flex flex-wrap justify-evenly items-center p-4 w-full bg-[#F9F1E7]">
-  <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem] ">
-    <Image src="/Trophy_22.png" width={40} height={40} alt="High Quality" />
-    <h4 className="font-bold">High Quality</h4>
-    <p>crafted from top materials</p>
-  </div>
-  
-  <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
-    <Image src="/Warranty_23.png" width={40} height={40} alt="Warranty Protection" />
-    <h4 className="font-bold">Warranty Protection</h4>
-    <p>Over 2 years</p>
-  </div>
-  
-  <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
-    <Image src="/Shipping_24.png" width={40} height={40} alt="Free Shipping" />
-    <h4 className="font-bold">Free Shipping</h4>
-    <p>Order over $150</p>
-  </div>
-  
-  <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
-    <Image src="/Suppor_25.png" width={40} height={40} alt="24/7 Support" />
-    <h4 className="font-bold">24 / 7 Support</h4>
-    <p>Dedicated support</p>
-  </div>
-</div>
 
+      <div className="mt-24 mb-5 flex flex-wrap justify-evenly items-center p-4 w-full bg-[#F9F1E7]">
+        <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem] ">
+          <Image
+            src="/Trophy_22.png"
+            width={40}
+            height={40}
+            alt="High Quality"
+          />
+          <h4 className="font-bold">High Quality</h4>
+          <p>crafted from top materials</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
+          <Image
+            src="/Warranty_23.png"
+            width={40}
+            height={40}
+            alt="Warranty Protection"
+          />
+          <h4 className="font-bold">Warranty Protection</h4>
+          <p>Over 2 years</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
+          <Image
+            src="/Shipping_24.png"
+            width={40}
+            height={40}
+            alt="Free Shipping"
+          />
+          <h4 className="font-bold">Free Shipping</h4>
+          <p>Order over $150</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center w-full sm:w-[11rem] md:w-[14rem]">
+          <Image
+            src="/Suppor_25.png"
+            width={40}
+            height={40}
+            alt="24/7 Support"
+          />
+          <h4 className="font-bold">24 / 7 Support</h4>
+          <p>Dedicated support</p>
+        </div>
+      </div>
     </>
   );
 }

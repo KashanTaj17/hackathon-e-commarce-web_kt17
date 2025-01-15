@@ -55,7 +55,9 @@ function Cart() {
                       className="w-full h-full rounded"
                     />
                   </div>
-                  <div className="w-full lg:w-1/4 text-gray-700">Rs. 250,000.00</div>
+                  <div className="w-full lg:w-1/4 text-gray-700">
+                    Rs. 250,000.00
+                  </div>
                   <div className="w-full lg:w-1/4">
                     <input
                       type="number"
@@ -63,7 +65,9 @@ function Cart() {
                       className="w-full lg:w-16 border border-gray-300 rounded text-center"
                     />
                   </div>
-                  <div className="w-full lg:w-1/4 text-gray-700">Rs. 250,000.00</div>
+                  <div className="w-full lg:w-1/4 text-gray-700">
+                    Rs. 250,000.00
+                  </div>
                   <div className="w-full lg:w-1/4 flex justify-center">
                     <button>
                       <Image
@@ -106,13 +110,35 @@ function Cart() {
         <div className="bg-[#FAF3EA] w-full py-16 mt-20">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {[
-              { src: "/Trophy_22.png", title: "High Quality", desc: "crafted from top materials" },
-              { src: "/Warranty_23.png", title: "Warranty Protection", desc: "Over 2 years" },
-              { src: "/Shipping_24.png", title: "Free Shipping", desc: "Order over 150 $" },
-              { src: "/Suppor_25.png", title: "24 / 7 Support", desc: "Dedicated support" },
+              {
+                src: "/Trophy_22.png",
+                title: "High Quality",
+                desc: "crafted from top materials",
+              },
+              {
+                src: "/Warranty_23.png",
+                title: "Warranty Protection",
+                desc: "Over 2 years",
+              },
+              {
+                src: "/Shipping_24.png",
+                title: "Free Shipping",
+                desc: "Order over 150 $",
+              },
+              {
+                src: "/Suppor_25.png",
+                title: "24 / 7 Support",
+                desc: "Dedicated support",
+              },
             ].map((feature, idx) => (
               <div key={idx}>
-                <Image src={feature.src} width={60} height={60} alt={feature.title} className="mx-auto" />
+                <Image
+                  src={feature.src}
+                  width={60}
+                  height={60}
+                  alt={feature.title}
+                  className="mx-auto"
+                />
                 <h4 className="font-bold mt-4">{feature.title}</h4>
                 <p className="text-[#898989]">{feature.desc}</p>
               </div>

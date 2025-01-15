@@ -77,13 +77,20 @@ function Blog() {
                   <p className="text-[#9F9F9F] text-sm pb-3">
                     Admin | 20 Oct 2022 | Wood
                   </p>
-                  <h2 className="text-2xl font-bold">Going all-in with millennial design</h2>
+                  <h2 className="text-2xl font-bold">
+                    Going all-in with millennial design
+                  </h2>
                   <p className="text-[#9F9F9F] mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-                    aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis
-                    in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-                    ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Mus mauris vitae ultricies leo integer malesuada
+                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
+                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
+                    enim sed faucibus turpis in. Cursus mattis molestie a
+                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
+                    libero. Pellentesque elit ullamcorper dignissim cras
+                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
+                    elementum.
                   </p>
                   <a
                     href="#"
@@ -104,14 +111,23 @@ function Blog() {
                   className="rounded"
                 />
                 <div className="mt-4">
-                  <p className="text-gray-500 text-sm pb-3">Admin | 20 Oct 2022 | Handmade</p>
-                  <h2 className="text-2xl font-bold">Exploring new ways of decorating</h2>
+                  <p className="text-gray-500 text-sm pb-3">
+                    Admin | 20 Oct 2022 | Handmade
+                  </p>
+                  <h2 className="text-2xl font-bold">
+                    Exploring new ways of decorating
+                  </h2>
                   <p className="text-[#9F9F9F] mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam
-                    ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis
-                    in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-                    ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Mus mauris vitae ultricies leo integer malesuada
+                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
+                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
+                    enim sed faucibus turpis in. Cursus mattis molestie a
+                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
+                    libero. Pellentesque elit ullamcorper dignissim cras
+                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
+                    elementum.
                   </p>
                   <a
                     href="#"
@@ -132,16 +148,23 @@ function Blog() {
                   className="rounded"
                 />
                 <div className="mt-4">
-                  <p className="text-[#9F9F9F] text-sm pb-3">Admin | 20 Oct 2022 | Wood</p>
+                  <p className="text-[#9F9F9F] text-sm pb-3">
+                    Admin | 20 Oct 2022 | Wood
+                  </p>
                   <h2 className="text-2xl font-bold">
                     Handmade pieces that took time to make
                   </h2>
                   <p className="text-[#9F9F9F] mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam 
-                    ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis 
-                    in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-                    ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Mus mauris vitae ultricies leo integer malesuada
+                    nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi
+                    blandit cursus risus at ultrices mi tempus imperdiet. Libero
+                    enim sed faucibus turpis in. Cursus mattis molestie a
+                    iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit
+                    libero. Pellentesque elit ullamcorper dignissim cras
+                    tincidunt. Pharetra et ultrices neque ornare aenean euismod
+                    elementum.
                   </p>
                   <a
                     href="#"
@@ -157,9 +180,15 @@ function Blog() {
                 <button className="px-4 py-2 bg-[#B88E2F] text-white rounded">
                   1
                 </button>
-                <button className="px-3 py-1 border rounded hover:bg-yellow-600">2</button>
-                <button className="px-3 py-1 border rounded hover:bg-yellow-600">3</button>
-                <button className="px-3 py-1 border rounded hover:bg-yellow-600">Next</button>
+                <button className="px-3 py-1 border rounded hover:bg-yellow-600">
+                  2
+                </button>
+                <button className="px-3 py-1 border rounded hover:bg-yellow-600">
+                  3
+                </button>
+                <button className="px-3 py-1 border rounded hover:bg-yellow-600">
+                  Next
+                </button>
               </div>
             </div>
 
@@ -209,9 +238,7 @@ function Blog() {
                       alt="Image44"
                       className="inline-block mr-2 rounded"
                     />
-                    <span>Exploring new ways 
-                    of decorating
-                    </span>
+                    <span>Exploring new ways of decorating</span>
                   </li>
                   <li>
                     <Image
@@ -264,28 +291,52 @@ function Blog() {
           <div className="flex w-full justify-around">
             {/* High Quality Section */}
             <div className="flex flex-col items-center">
-              <Image src="/Trophy_22.png" height={60} width={60} alt="High Quality" className="w-[60px] h-[60px]" />
+              <Image
+                src="/Trophy_22.png"
+                height={60}
+                width={60}
+                alt="High Quality"
+                className="w-[60px] h-[60px]"
+              />
               <h4 className="font-bold">High Quality</h4>
               <p className="text-[#898989]">Crafted from top materials</p>
             </div>
 
             {/* Warranty Protection Section */}
             <div className="flex flex-col items-center">
-              <Image src="/Warranty_23.png" height={60} width={60} alt="Warranty Protection" className="w-[60px] h-[60px]" />
+              <Image
+                src="/Warranty_23.png"
+                height={60}
+                width={60}
+                alt="Warranty Protection"
+                className="w-[60px] h-[60px]"
+              />
               <h4 className="font-bold">Warranty Protection</h4>
               <p className="text-[#898989]">Over 2 years</p>
             </div>
 
             {/* Free Shipping Section */}
             <div className="flex flex-col items-center">
-              <Image src="/Shipping_24.png" height={60} width={60} alt="Free Shipping" className="w-[60px] h-[60px]" />
+              <Image
+                src="/Shipping_24.png"
+                height={60}
+                width={60}
+                alt="Free Shipping"
+                className="w-[60px] h-[60px]"
+              />
               <h4 className="font-bold">Free Shipping</h4>
               <p className="text-[#898989]">Order over 150$</p>
             </div>
 
             {/* 24/7 Support Section */}
             <div className="flex flex-col items-center">
-              <Image src="/Suppor_25.png" height={60} width={60} alt="24/7 Support" className="w-[60px] h-[60px]" />
+              <Image
+                src="/Suppor_25.png"
+                height={60}
+                width={60}
+                alt="24/7 Support"
+                className="w-[60px] h-[60px]"
+              />
               <h4 className="font-bold">24 / 7 Support</h4>
               <p className="text-[#898989]">Dedicated support</p>
             </div>

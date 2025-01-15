@@ -1,73 +1,74 @@
-import Link from 'next/link';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const products = [
     {
       id: 1,
-      image: '/Image_06.png', 
-      title: 'Syltherine',
-      subtitle: 'Stylish cafe chair',
-      price: 'Rp 2.500.000',
-      discountPrice: 'Rp 3.500.000',
-      badge: '-30%',
+      image: "/Image_06.png",
+      title: "Syltherine",
+      subtitle: "Stylish cafe chair",
+      price: "Rp 2.500.000",
+      discountPrice: "Rp 3.500.000",
+      badge: "-30%",
     },
     {
       id: 2,
-      image: '/Image_07.png',
-      title: 'Leviosa',
-      subtitle: 'Stylish cafe chair',
-      price: 'Rp 2.500.000',
-      badge: '',
+      image: "/Image_07.png",
+      title: "Leviosa",
+      subtitle: "Stylish cafe chair",
+      price: "Rp 2.500.000",
+      badge: "",
     },
     {
       id: 3,
-      image: '/Image_08.png',
-      title: 'Lolito',
-      subtitle: 'Luxury big sofa',
-      price: 'Rp 7.000.000',
-      discountPrice: 'Rp 14.000.000',
-      badge: '-50%',
+      image: "/Image_08.png",
+      title: "Lolito",
+      subtitle: "Luxury big sofa",
+      price: "Rp 7.000.000",
+      discountPrice: "Rp 14.000.000",
+      badge: "-50%",
     },
     {
       id: 4,
-      image: '/Image_09.png',
-      title: 'Respira',
-      subtitle: 'Outdoor bar table and stool',
-      price: 'Rp 500.000',
-      badge: 'New',
+      image: "/Image_09.png",
+      title: "Respira",
+      subtitle: "Outdoor bar table and stool",
+      price: "Rp 500.000",
+      badge: "New",
     },
     {
       id: 5,
-      image: '/Image_10.png',
-      title: 'Grifo',
-      subtitle: 'Night lamp',
-      price: 'Rp 1.500.000',
-      badge: '',
+      image: "/Image_10.png",
+      title: "Grifo",
+      subtitle: "Night lamp",
+      price: "Rp 1.500.000",
+      badge: "",
     },
     {
       id: 6,
-      image: '/Image_11.png',
-      title: 'Muggo',
-      subtitle: 'Small mug',
-      price: 'Rp 150.000',
-      badge: 'New',
+      image: "/Image_11.png",
+      title: "Muggo",
+      subtitle: "Small mug",
+      price: "Rp 150.000",
+      badge: "New",
     },
     {
       id: 7,
-      image: '/Image_12.png',
-      title: 'Pingky',
-      subtitle: 'Cute bed set',
-      price: 'Rp 7.000.000',
-      discountPrice: 'Rp 14.000.000',
-      badge: '-50%',
+      image: "/Image_12.png",
+      title: "Pingky",
+      subtitle: "Cute bed set",
+      price: "Rp 7.000.000",
+      discountPrice: "Rp 14.000.000",
+      badge: "-50%",
     },
     {
       id: 8,
-      image: '/Image_13.png',
-      title: 'Potty',
-      subtitle: 'Minimalist flower pot',
-      price: 'Rp 500.000',
-      badge: 'New',
+      image: "/Image_13.png",
+      title: "Potty",
+      subtitle: "Minimalist flower pot",
+      price: "Rp 500.000",
+      badge: "New",
     },
   ];
 
@@ -77,13 +78,19 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-6 text-center">Our Products</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-             <Link href="/cart" className="text-[#9F9F9F] flex items-center text-xl">
+          {products.map((product) => (
+            <Link
+              href="/cart"
+              key={product.id}
+              className="text-[#9F9F9F] flex items-center text-xl"
+            >
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
                 <div className="relative">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.title}
+                    height={301}
+                    width={285}
                     className="w-[285px] h-[301px] object-cover"
                   />
                   {product.badge && (
@@ -96,7 +103,9 @@ export default function Home() {
                   <h2 className="text-lg font-semibold">{product.title}</h2>
                   <p className="text-sm text-gray-500">{product.subtitle}</p>
                   <div className="mt-2">
-                    <span className="text-lg font-bold text-gray-800">{product.price}</span>
+                    <span className="text-lg font-bold text-gray-800">
+                      {product.price}
+                    </span>
                     {product.discountPrice && (
                       <span className="text-sm line-through text-gray-400 ml-2">
                         {product.discountPrice}
@@ -110,11 +119,10 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col text-center mt-8">
-            <button className="w-full sm:w-[245px] h-[48px] bg-[#FFFFFF] text-[#B88E2F] font-bold border border-[#B88E2F] hover:border-[3px] justify-center mb-12 mx-auto">
+          <button className="w-full sm:w-[245px] h-[48px] bg-[#FFFFFF] text-[#B88E2F] font-bold border border-[#B88E2F] hover:border-[3px] justify-center mb-12 mx-auto">
             Show More
-        </button>
+          </button>
         </div>
-
       </div>
     </div>
   );
