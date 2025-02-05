@@ -1,7 +1,19 @@
+'use client';
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function Cart() {
+  const productPrice = 250000;
+  const [quantity, setQuantity] = useState(1);
+  const [subtotal, setSubtotal] = useState(productPrice);
+
+  const handleQuantityChange = (e:any) => {
+    const newQuantity = parseInt(e.target.value);
+    setQuantity(newQuantity);
+    setSubtotal(newQuantity * productPrice);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -56,17 +68,19 @@ function Cart() {
                     />
                   </div>
                   <div className="w-full lg:w-1/4 text-gray-700">
-                    Rs. 250,000.00
+                    Rs. {productPrice.toLocaleString()}
                   </div>
                   <div className="w-full lg:w-1/4">
                     <input
                       type="number"
-                      defaultValue={1}
+                      value={quantity}
+                      onChange={handleQuantityChange}
+                      min="1"
                       className="w-full lg:w-16 border border-gray-300 rounded text-center"
                     />
                   </div>
                   <div className="w-full lg:w-1/4 text-gray-700">
-                    Rs. 250,000.00
+                    Rs. {subtotal.toLocaleString()}
                   </div>
                   <div className="w-full lg:w-1/4 flex justify-center">
                     <button>
@@ -91,11 +105,11 @@ function Cart() {
             </h2>
             <div className="flex justify-between mb-4">
               <span className="text-black font-semibold">Subtotal</span>
-              <span className="text-gray-700">Rs. 250,000.00</span>
+              <span className="text-gray-700">Rs. {subtotal.toLocaleString()}</span>
             </div>
             <div className="flex justify-between mb-6">
               <span className="text-black font-semibold">Total</span>
-              <span className="text-[#B88E2F] font-bold">Rs. 250,000.00</span>
+              <span className="text-[#B88E2F] font-bold">Rs. {subtotal.toLocaleString()}</span>
             </div>
             <Link
               href="/checkout"

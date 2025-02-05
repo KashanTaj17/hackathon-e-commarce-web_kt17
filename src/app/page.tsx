@@ -6,6 +6,7 @@ import SubHero from "./component/SubHero";
 import Products from "./component/Product";
 import Slides from "./component/Slides";
 import ShareSetupSection from "./component/ShareSetupSection.tsx";
+import ProductCards from "./products/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Products />
       <Slides />
       <ShareSetupSection />
+      <ProductCards />
      </div>
   );
 }
